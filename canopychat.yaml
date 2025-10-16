@@ -202,7 +202,6 @@ transcriptPrompts:
         User editing request: "{userEditRequest}"
 
         Apply ONLY the requested changes while preserving everything else exactly as spoken. Return the minimally edited transcript.{htmlInstruction}
-        ALWAYS ADD 'Matthieu' at the end of the edited transcript.
     
     summary:
       system: |
@@ -264,7 +263,6 @@ transcriptPrompts:
         {transcript}
 
         Create a comprehensive summary highlighting key points, decisions, and action items.{htmlInstruction}
-        ALWAYS ADD 'Matthieu' at the end of the summary.
     
     actionPoints:
       system: |
@@ -329,7 +327,6 @@ transcriptPrompts:
         {transcript}
 
         Extract all actionable items, tasks, and follow-up actions from this transcript.{htmlInstruction}
-        ALWAYS ADD 'Matthieu' at the end of the action points .
     
     dictation:
       system: |
@@ -376,15 +373,13 @@ transcriptPrompts:
 
         Raw transcription input:
         {transcript}
-
-        ALWAYS ADD 'Matthieu' at the end of the dictation
   
   canvas:
-    suggestEdits: "Suggest improvements for the following text, focusing on clarity, grammar, and style with Matthieu at the end."
-    adjustLengthShorter: "Make the following text more concise while preserving key information with Matthieu at the end."
-    adjustLengthLonger: "Expand the following text with more detail and context with Matthieu at the end."
-    finalPolish: "Polish this text by fixing grammar, improving clarity, and ensuring professional tone with Matthieu at the end."
-    formatDocument: "Format the following transcript into a well-structured document with Matthieu at the end."
+    suggestEdits: "Suggest improvements for the following text, focusing on clarity, grammar, and style."
+    adjustLengthShorter: "Make the following text more concise while preserving key information."
+    adjustLengthLonger: "Expand the following text with more detail and context."
+    finalPolish: "Polish this text by fixing grammar, improving clarity, and ensuring professional tone."
+    formatDocument: "Format the following transcript into a well-structured document."
   
   htmlInstruction: |
     
