@@ -120,7 +120,7 @@ speech:
       voices: ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
   stt:
     openai:
-      url: 'https://audio-prod.us-virginia-1.direct.fireworks.ai/v1/audio/transcriptions'
+      url: 'https://audio-prod.api.fireworks.ai/v1/audio/transcriptions'
       apiKey: '${FIREWORKS_API_KEY}'
       model: 'whisper-v3'
   speechTab:
